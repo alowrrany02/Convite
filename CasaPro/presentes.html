@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de Presentes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛒 Lista de Presentes</h1>
+
+        <p>
+            Escolha um presente para nos ajudar a começar essa nova etapa.
+        </p>
+
+        <div class="produtos">
+
+            <div class="produto">
+
+                <img src="airfryer.jpg">
+
+                <h3>Air Fryer</h3>
+
+                <p>R$ 350,00</p>
+
+                <button onclick="presentear('Air Fryer')">
+                    Presentear
+                </button>
+
+            </div>
+
+            <div class="produto">
+
+                <img src="liquidificador.jpg">
+
+                <h3>Liquidificador</h3>
+
+                <p>R$ 180,00</p>
+
+                <button onclick="presentear('Liquidificador')">
+                    Presentear
+                </button>
+
+            </div>
+
+            <div class="produto">
+
+                <img src="panela.jpg">
+
+                <h3>Jogo de Panelas</h3>
+
+                <p>R$ 250,00</p>
+
+                <button onclick="presentear('Jogo de Panelas')">
+                    Presentear
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function presentear(item) {
+
+            alert(
+                "Você escolheu: " +
+                item +
+                "\n\nPIX: seu-pix@email.com"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

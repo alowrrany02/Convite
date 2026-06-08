@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+
+    background-image: url("./img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    overflow-x: hidden;
+}
+
+/* TELA INICIAL */
+
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay {
+    background: rgba(141, 59, 59, 0.92);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.overlay h1 {
+    color: #8e6bb8;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #8e6bb8;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+/* CONTEÚDO */
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-radius: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+    max-width: 100%;
+}
+
+.foto {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.versiculo {
+    font-style: italic;
+    color: #6d4a99;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+#contador {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #8e6bb8;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 180px;
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+}
+
+/* PRODUTOS */
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produto {
+    width: 250px;
+
+    background: white;
+
+    padding: 20px;
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    margin-top: 10px;
+}
+
+.produto button {
+    margin-top: 10px;
+    padding: 10px 20px;
+
+    border: none;
+
+    background: #8e6bb8;
+    color: white;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .overlay {
+        padding: 20px;
+    }
+
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .produto {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    #contador {
+        font-size: 18px;
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .card {
+        width: 220px;
+    }
+
+    .produto {
+        width: 300px;
+    }
+}
