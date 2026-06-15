@@ -445,6 +445,12 @@ h2{
 
     background: #5b3c82;
 }
+
+.p-convi{
+    font-style: italic;
+    text-align: justify;
+    
+}
 /* ================== CELULAR ==========================*/
 
 @media (max-width: 480px) {
