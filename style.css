@@ -45,8 +45,13 @@ body {
 }
 
 /* Conteúdos aleatórios */
-.imgam{
+.img-lowemath{
     width: 50%;
+}
+
+p{
+    margin: 0;
+    font-size: large;
 }
 
 /* CONTEÚDO */
@@ -66,9 +71,10 @@ body {
 
     border-radius: 2px;
     text-align: center;
-
+    
     box-sizing: border-box;
 }
+
 
 .datahora{
     width: 30%;
@@ -91,7 +97,7 @@ body {
     padding: 5px;
 }
 audio{
-    width:20%;
+    width:30%;
     height: 25px;
     margin-top: 5%;
 }
@@ -99,10 +105,6 @@ audio{
     font-style: italic;
     color: #402560;
     margin: 5px 0;
-}
-p{
-    margin: 0;
-    font-size: large;
 }
 #contador {
     font-size: 22px;
@@ -114,25 +116,31 @@ p{
 
 .cards {
     padding-top: 10px;
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 15px;
+
     margin: auto;
-    width: 50%;
-    
+    width: 90%;
 }
 
 .card {
-    width: 15%;
-    padding: 5px 10px;
-    background: white;
+    width: 90px;
+    min-width: 70px;
 
-    border-radius: 3px;
+    padding: 10px 5px;
+
+    background: white;
+    border-radius: 5px;
+
     text-decoration: none;
     color: black;
 
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 
     transition: .3s;
+    text-align: center;
 }
 
 .card:hover {
@@ -140,8 +148,9 @@ p{
 }
 
 .card img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
 }
 
 /* LISTA DE PRESENTES */
@@ -264,7 +273,7 @@ h2{
         padding: 15px;
         background-image: url('./img/fundo.png');
     }
-    .imgam{
+    .img-lowemath{
     width: 95%;
     }
     .botao{
@@ -280,12 +289,20 @@ h2{
     .foto {
         width: 90%;
     }
-    .cards{
-        width: 90%;
+    .cards {
+        gap: 8px;
+        width: 98%;
     }
 
     .card {
-        width: 40%;
+        width: 70px;
+        padding: 8px 3px;
+        font-size: 10px;
+    }
+
+    .card img {
+        width: 20px;
+        height: 20px;
     }
     .datahora{
     width: 80%;
