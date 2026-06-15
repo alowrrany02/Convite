@@ -103,7 +103,6 @@ audio{
 p{
     margin: 0;
     font-size: large;
-    padding: 10px;
 }
 #contador {
     font-size: 22px;
@@ -162,6 +161,13 @@ p{
     text-align: center;
     box-sizing: border-box;
 }
+
+.paragra-presentes{
+    padding: 10px;
+    margin: 0;
+    font-size: large;
+}
+
 /*Div container*/
 .produtos {
     display: flex;
