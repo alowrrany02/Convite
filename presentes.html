@@ -12,10 +12,24 @@
 <body class="pagina-convite">
     <div class="overlay-convite-presente">
         <img src="./img/logo.png" class="logo" alt="Logo">
-        <h2>Lista de Presentes</h2>
-        <p class="paragra-presentes">
-            Escolha um presente para nos ajudar a começar essa nova etapa.
-        </p>
+        <div class="mensagem-presentes">
+            <h2>Como nos presentear</h2>
+            <p>
+                Sua presença em nosso casamento já é o maior presente que poderíamos receber. Mas caso deseje nos presentear, você pode escolher qualquer item desta lista e:
+            </p>
+            <ul>
+                <li>Entregar o presente fisicamente em nossa casa;</li>
+                <li>Fazer uma contribuição através do PIX correspondente ao valor do presente.
+                Nesse caso, o valor será enviado diretamente para nossa conta e será utilizado
+                para a compra dos itens do nosso novo lar.</li>
+                <li>Ou adquirir o produto diretamente pelo Mercado Livre e enviá-lo para nós.</li>
+            </ul>
+
+            <p class="agradecimento">
+                ✨Agradecemos imensamente pelo carinho e por fazer parte desse momento tão especial.✨
+            </p>
+
+</div>
         <!-- PRODUTOS-->
         <div class="produtos">
             
@@ -28,156 +42,227 @@
                     <h3>Air Fryer Mondial 5L Preta</h3>
                     <p class="preco">R$ 350,00</p>
 
-                    <button onclick="presentear('Air Fryer Mondial 5L')">
-                        🎁 Presentear
-                    </button>
+                    <button onclick="presentear(
+                        'Jogo de Panelas',
+                        '499,90',
+                        'https://www.mercadolivre.com.br/'
+                        )">
+                            🎁 Presentear
+                        </button>
                 </div>
 
             </div>
 
             <div class="produto">
-
                 <div class="img-produto">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_800517-MLA99968106351_112025-F.webp" >
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_646055-MLA99511429566_112025-F.webp" >
                 </div>
 
                 <div class="info-produto">
-                    <h3>Jogo de Panelas Antiaderente 10 Peças</h3>
+                    <h3>Air Fryer Mondial 5L Preta</h3>
+                    <p class="preco">R$ 350,00</p>
 
-                    <p class="preco">R$ 499,90</p>
-
-                    <button onclick="presentear('Jogo de Panelas')">
-                        🎁 Presentear
-                    </button>
+                    <button onclick="presentear(
+                        'Jogo de Panelas',
+                        '499,90',
+                        'https://www.mercadolivre.com.br/'
+                        )">
+                            🎁 Presentear
+                        </button>
                 </div>
 
             </div>
 
             <div class="produto">
-
                 <div class="img-produto">
-                    <img src="data:image/jpeg;base64,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" >
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_646055-MLA99511429566_112025-F.webp" >
                 </div>
 
                 <div class="info-produto">
-                    <h3>Liquidificador Turbo 1200W</h3>
+                    <h3>Air Fryer Mondial 5L Preta</h3>
+                    <p class="preco">R$ 350,00</p>
 
-                    <p class="preco">R$ 180,00</p>
-
-                    <button onclick="presentear('Liquidificador')">
-                        🎁 Presentear
-                    </button>
+                    <button onclick="presentear(
+                        'Jogo de Panelas',
+                        '499,90',
+                        'https://www.mercadolivre.com.br/'
+                        )">
+                            🎁 Presentear
+                        </button>
                 </div>
 
             </div>
 
             <div class="produto">
-
                 <div class="img-produto">
-                    <img src="data:image/jpeg;base64,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" >
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_646055-MLA99511429566_112025-F.webp" >
                 </div>
 
                 <div class="info-produto">
-                    <h3>Liquidificador Turbo 1200W</h3>
+                    <h3>Air Fryer Mondial 5L Preta</h3>
+                    <p class="preco">R$ 350,00</p>
 
-                    <p class="preco">R$ 180,00</p>
-
-                    <button onclick="presentear('Liquidificador')">
-                        🎁 Presentear
-                    </button>
+                    <button onclick="presentear(
+                        'Jogo de Panelas',
+                        '499,90',
+                        'https://www.mercadolivre.com.br/'
+                        )">
+                            🎁 Presentear
+                        </button>
                 </div>
 
             </div>
 
             <div class="produto">
-
                 <div class="img-produto">
-                    <img src="data:image/jpeg;base64,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" >
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_646055-MLA99511429566_112025-F.webp" >
                 </div>
 
                 <div class="info-produto">
-                    <h3>Liquidificador Turbo 1200W</h3>
+                    <h3>Air Fryer Mondial 5L Preta</h3>
+                    <p class="preco">R$ 350,00</p>
 
-                    <p class="preco">R$ 180,00</p>
-
-                    <button onclick="presentear('Liquidificador')">
-                        🎁 Presentear
-                    </button>
+                    <button onclick="presentear(
+                        'Jogo de Panelas',
+                        '499,90',
+                        'https://www.mercadolivre.com.br/'
+                        )">
+                            🎁 Presentear
+                        </button>
                 </div>
 
             </div>
 
             <div class="produto">
-
                 <div class="img-produto">
-                    <img src="data:image/jpeg;base64,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" >
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_646055-MLA99511429566_112025-F.webp" >
                 </div>
 
                 <div class="info-produto">
-                    <h3>Liquidificador Turbo 1200W</h3>
+                    <h3>Air Fryer Mondial 5L Preta</h3>
+                    <p class="preco">R$ 350,00</p>
 
-                    <p class="preco">R$ 180,00</p>
-
-                    <button onclick="presentear('Liquidificador')">
-                        🎁 Presentear
-                    </button>
+                    <button onclick="presentear(
+                        'Jogo de Panelas',
+                        '499,90',
+                        'https://www.mercadolivre.com.br/'
+                        )">
+                            🎁 Presentear
+                        </button>
                 </div>
 
             </div>
 
             <div class="produto">
-
                 <div class="img-produto">
-                    <img src="data:image/jpeg;base64,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" >
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_646055-MLA99511429566_112025-F.webp" >
                 </div>
 
                 <div class="info-produto">
-                    <h3>Liquidificador Turbo 1200W</h3>
+                    <h3>Air Fryer Mondial 5L Preta</h3>
+                    <p class="preco">R$ 350,00</p>
 
-                    <p class="preco">R$ 180,00</p>
-
-                    <button onclick="presentear('Liquidificador')">
-                        🎁 Presentear
-                    </button>
+                    <button onclick="presentear(
+                        'Jogo de Panelas',
+                        '499,90',
+                        'https://www.mercadolivre.com.br/'
+                        )">
+                            🎁 Presentear
+                        </button>
                 </div>
 
             </div>
 
             <div class="produto">
-
                 <div class="img-produto">
-                    <img src="data:image/jpeg;base64,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" >
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_646055-MLA99511429566_112025-F.webp" >
                 </div>
 
                 <div class="info-produto">
-                    <h3>Liquidificador Turbo 1200W</h3>
+                    <h3>Air Fryer Mondial 5L Preta</h3>
+                    <p class="preco">R$ 350,00</p>
 
-                    <p class="preco">R$ 180,00</p>
-
-                    <button onclick="presentear('Liquidificador')">
-                        🎁 Presentear
-                    </button>
+                    <button onclick="presentear(
+                        'Jogo de Panelas',
+                        '499,90',
+                        'https://www.mercadolivre.com.br/'
+                        )">
+                            🎁 Presentear
+                        </button>
                 </div>
 
             </div>
+            
         </div>
 
     </div>
 
     <script>
-
-        function presentear(item) {
-
-            alert(
-                "Você escolheu presentear:\n\n" +
-                item +
-                "\n\nPIX: seu-pix@email.com"
-            );
-
+        function presentear(nome, valor, linkML){
+            document.getElementById("tituloPresente").innerText = nome;
+            document.getElementById("valorPresente").innerHTML =
+                "<strong>Valor sugerido: R$ " + valor + "</strong>";
+            document.getElementById("btnMercadoLivre").href = linkML;
+            document.getElementById("modalPresente").style.display = "flex";
         }
 
-    </script>
+        function fecharModal(){
+            document.getElementById("modalPresente").style.display = "none";
+        }
 
+        function copiarPix(){
+            const pix = document.getElementById("chavePix");
+            navigator.clipboard.writeText(pix.value);
+            alert("✅ Chave PIX copiada!");
+        }
+    </script>
+    <div id="modalPresente" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+
+        <h2 id="tituloPresente"></h2>
+        <p id="valorPresente"></p>
+        <p>
+            Você pode nos presentear de três formas:
+        </p>
+
+        <ul>
+            <li>Entregando o presente fisicamente.</li>
+            <li>Enviando o valor correspondente via PIX.</li>
+            <li>Comprando diretamente pelo Mercado Livre.</li>
+        </ul>
+
+        <div class="pix-box">
+            <h3>PIX</h3>
+            <input
+                type="text"
+                id="chavePix"
+                value="(86) 99471-9939"
+                readonly
+            >
+            <button onclick="copiarPix()">
+                📋 Copiar PIX
+            </button>
+
+        </div>
+
+        <div class="acoes-modal">
+            <a
+                id="btnMercadoLivre"
+                href="#"
+                target="_blank"
+                class="btn-ml"
+            >
+                🛒 Comprar no Mercado Livre
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
 </body>
 
 </html>

@@ -1,21 +1,21 @@
-/*numero da nossa cor  #f2e0d2*/
+/*===================PADRÃO====================*/
 body {
-  font-family: 'Times New Roman', Times, serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background-image: url('img/fundoalternativo.jpg');
-  background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('img/fundoalternativo.jpg');
+    background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
-  color: #000000;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* TELA INICIAL */
+/* ==============TELA INICIAL ====================*/
 
 .overlay {
     background-image: url('./img/fundopaisagem.jpg');
@@ -33,6 +33,9 @@ body {
     flex-direction: column;
 }
 
+.img-lowemath{
+    width: 50%;
+}
 
 .botao {
     display: inline-block;
@@ -42,11 +45,6 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-}
-
-/* Conteúdos aleatórios */
-.img-lowemath{
-    width: 50%;
 }
 
 p{
@@ -152,32 +150,57 @@ audio{
     height: 25px;
     margin-bottom: 5px;
 }
-
-/* LISTA DE PRESENTES */
+/* =============LISTA DE PRESENTES===================== */
 .overlay-convite-presente{
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.532), rgba(255, 255, 255, 0.468)),
-        url('https://i.pinimg.com/474x/71/e9/9c/71e99c512b5286a055af92b68985433c.jpg?nii=t');
-
+    linear-gradient(rgba(255, 255, 255, 0.532), rgba(255, 255, 255, 0.468)),
+    url('https://i.pinimg.com/474x/71/e9/9c/71e99c512b5286a055af92b68985433c.jpg?nii=t');
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     width: 70%;
     margin: 20px auto;
-
+    
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
 }
-
-.paragra-presentes{
-    padding: 10px;
-    margin: 0;
-    font-size: large;
+/*Mensagens de informações sobre os presentes*/
+.mensagem-presentes{
+    background: rgba(255,255,255,.85);
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 25px;
 }
 
-/*Div container*/
+.mensagem-presentes h2{
+    color: #31194e;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.mensagem-presentes p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.mensagem-presentes ul{
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 25px;
+    
+}
+
+.agradecimento{
+    color: #442668;
+    font-weight: bold;
+    text-align: center !important;
+    
+}
+
+/*Div container sobre os produtos*/
 .produtos {
     display: flex;
     flex-wrap: wrap;
@@ -201,11 +224,12 @@ audio{
     padding: 0;
 }
 
-
 .produto:hover {
     transform: translateY(-5px);
 }
+
 /*Imagem de cada card*/
+
 .img-produto {
     width: 90%;
     height: 180px;
@@ -218,14 +242,18 @@ audio{
     height: 100%;
     object-fit: contain;
 }
+
 /*Informaçoes de cada card*/
+
 .info-produto {
     padding: 15px;
 }
+
 h2{
     margin: 5px;
     padding: 0;
 }
+
 .produto h3{
     margin: 0;
     color: #333;
@@ -257,6 +285,105 @@ h2{
     background: #6d4a99;
 }
 
+/*Parte do modal na hora do pagamento*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    width: 80%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+
+.fechar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.pix-box {
+    padding: 15px;
+    background: #fbf9fc;
+    border-radius: 5px;
+}
+
+.pix-box h3{
+    margin-top: 0;
+    color: #000000;
+}
+
+.pix-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.pix-box button {
+    width: 60%;
+    padding: 10px;
+    background: #6a4a92;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.acoes-modal {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-ml,
+.btn-fechar {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-ml {
+    background: #fff82a;
+    color: rgb(0, 0, 0);
+}
+
+.modal-content p{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.modal-content ul{
+    text-align: left;
+    padding-left: 25px;
+    line-height: 1.2;
+}
+
+.modal-content li{
+    margin-bottom: 2px;
+}
 /* ================== CELULAR ==========================*/
 
 @media (max-width: 480px) {
